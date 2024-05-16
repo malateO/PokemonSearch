@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POKEDEX</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <h1>POKEDEX</h1>
+    <h3>Is Your Pokemon in the Codex</h3>
+<div class="container">
+    <div class="search-container">
+        <span class="search-icon material-symbols-outlined">search</span>
+        <input type="text" class="search-inpt" id="search-input" required>
+    </div>
+    <div class="btn-container">
+        <button class="btn-search" id="search-button">SEARCH</button>
+    </div>
+    <div class="form-container">
+        <form action="" class="form-poke" id="form-pokemon">
+            <div class="hidden-contents" id="hidden">
+                <h3 class="poke-name" id="pokemon-name"></h3>
+                <h3 class="poke-id" id="pokemon-id">#</h3>
+                <div class="weight-n-height">
+                    <p class="poke-weight">
+                        Weight: 
+                            <span class="span-weight" id="weight"></span>
+                    </p>
+                    <p class="poke-height">
+                        Height: 
+                            <span class="span-height" id="height"></span>
+                    </p>
+                </div>
+                <div class="image-container">
+                    <img src="" class="poke-sprite" id="sprite">
+                </div>
+                <div class="poke-types" id="types">
+
+                </div>
+            </div>
+        </form>
+    </div>
+        <div class="poke-stats" id="pokeStats">
+            <table>
+                <thead class="content-tableH">
+                    <tr>
+                        <th>Base</th>
+                        <th>Stats</th>
+                    </tr>
+                </thead>
+                <tbody class="content-tableB">
+                    <tr class="poke-hp">
+                        <th>HP:</th>
+                        <td  id="hp">--/--</td>
+                    </tr>
+                    <tr class="poke-attack">
+                        <th>Attack:</th>
+                        <td id="attack">--/--</td>
+                    </tr>
+                    <tr class="poke-defense">
+                        <th>Defense:</th>
+                        <td id="defense">--/--</td>
+                    </tr>
+                    <tr class="poke-spAttack" >
+                        <th>Sp. Attack:</th>
+                        <td id="special-attack">--/--</td>
+                    </tr>
+                    <tr class="poke-spAttack">
+                        <th>Sp. Defense:</th>
+                        <td id="special-defense">--/--</td>
+                    </tr>
+                    <tr class="poke-speed">
+                        <th>Speed:</th>
+                        <td id="speed">--/--</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
